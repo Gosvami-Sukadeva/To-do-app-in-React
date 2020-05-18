@@ -28,7 +28,7 @@ class App extends Component {
         text: "pomalowac dom po sylwestrze",
         date: "2019-09-11",
         important: false,
-        active: false,
+        active: true,
         finishDate: null,
       },
       {
@@ -43,13 +43,13 @@ class App extends Component {
         id: 4,
         text: "nabrać masy mięśniowej",
         date: "2020-05-20",
-        important: true,
+        important: false,
         active: true,
         finishDate: null,
       },
       {
         id: 5,
-        text: "wylać się w kiblu",
+        text: "podlać kwiatki",
         date: "2020-05-21",
         important: true,
         active: true,
@@ -59,7 +59,7 @@ class App extends Component {
         id: 6,
         text: "umyć podłogę",
         date: "2020-05-29",
-        important: true,
+        important: false,
         active: true,
         finishDate: null,
       },
@@ -103,7 +103,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        to-do app
+        <h1>TO-DO APP</h1>
         <AddTask />
         <TaskList
           tasks={this.state.tasks}
